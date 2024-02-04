@@ -81,7 +81,8 @@ nav ul li a:hover::after{
     color: #eabd23;
 }
 
-/* -------------About--------- */
+/* --------------------------------------About--------------------------------------- */
+
 
 #about{
     padding: 80px 0; /*  top-bottom, left-right*/
@@ -117,7 +118,7 @@ nav ul li a:hover::after{
 
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px; /*top, left-right,  bottom*/
+    margin: 20px 0 20px; /*top, left-right,  bottom*/
 }
 
 .tab-links{
@@ -144,9 +145,21 @@ nav ul li a:hover::after{
 }
 
 
-.tab-contents ul li{
+/* .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
+    font-size: 14px;
+} */
+
+.tab-contents-main{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.tab-contents-sub{
+    padding-left:20px;
+    list-style:disc;
     font-size: 14px;
 }
 
@@ -154,3 +167,14 @@ nav ul li a:hover::after{
     color:#eabd23;
     font-size: 15px;
 }
+
+.tab-contents{
+    display:none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/* --------------------------------------Services--------------------------------------- */
