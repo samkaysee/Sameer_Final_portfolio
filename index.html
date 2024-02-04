@@ -26,7 +26,7 @@
     </div>
 </div>
 
-<!-- ----------------------------About-------------------- -->
+<!-- ------------------------------------About------------------------------------- -->
 <div id="about">
     <div class="container">
         <div class="row">
@@ -35,15 +35,10 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>I am an experienced Chartered Accountant with a progressive background and more than Eight(8) years of experience in 
+                <p>I am an qualified Chartered Accountant with a progressive background and more than Eight(8) years of experience in 
                     Risk Advisory, Financial Planning and Analysis (FP&A), Business Intelligence and Growth.
                     I showcase strong analytical skills in utilizing Microsoft Excel and Power BI to enhance data analysis and reporting capabilities.
-                    <br>
-                    <br>My peers describe me as a resourceful professional who upholds an 
-                    optimistic and proactive demeanor when confronting challenges. 
-                    I possess a keen interest in areas such as data analytics, 
-                    financial model development, Strategic Forecasting and comprehensive 
-                    financial planning & analysis.
+                    
                     <br>
                     <br> I bring a unique blend of professionalism and a passion for life 
                     to my work. Beyond the world of finance, I am a fun-loving individual 
@@ -55,30 +50,129 @@
                 <br>Let's connect and explore collaborative opportunities!</p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-contents">
-                    <UL>
+                <div class="tab-contents active-tab" id="skills">
+                    <UL class="tab-contents-main">
                         <li><span>Financial Planning and Analysis (FP&A)</span><br>
-                            Budgeting and forecasting.
-                            Financial modeling for strategic decision-making.
-                            Variance analysis and performance reporting.
-                        
-                        
+                            <ul class="tab-contents-sub">  
+                                <li>Budgeting and forecasting<br></li>
+                                <li>Financial modeling for strategic decision-making<br></li>
+                                <li> Variance analysis and performance reporting<br></li>
+                            </ul>
                         </li>       
-                        <li><span>Skill2</span><br>Main Task</li>       
-                        <li><span>Skill3</span><br>Main Task</li>       
+                        <li><span>Business Intelligence</span><br>
+                            <ul class="tab-contents-sub">
+                                <li> Gathering and analyzing business data<br></li>
+                                <li> Creating dashboards and reports for strategic insights<br></li>
+                                <li>Utilizing data visualization tools, such as Power BI<br></li>
+                            </ul>
+                        </li>       
+                        <li><span>Internal Control and Team Leadership</span><br>
+                            <ul class="tab-contents-sub">  
+                                <li>Leading and mentoring finance teams<br></li>
+                                <li>Contributing to a positive and productive work environment<br></li>
+                                <li>Designing and implementing internal control procedures<br></li>
+                            </ul>
+                        </li>                    
+                    </UL>     
+                </div>
+
+                <!-- Budgeting and Forecasting:
+
+                Planning and predicting financial budgets.
+                Creating financial models to aid in strategic decision-making.
+                Analyzing variances and providing performance reports.
+                Business Intelligence:
+                
+                Collecting and analyzing business data.
+                Developing dashboards and reports to gain strategic insights.
+                Utilizing data visualization tools, such as Power BI, for effective presentation.
+                Team Leadership:
+                
+                Leading and guiding finance teams.
+                Fostering a positive and productive work environment.
+                Internal Controls:
+                
+                Designing and implementing procedures for internal controls.
+                Ensuring compliance with internal control policies and procedures. -->
+
+                <div class="tab-contents" id="experience">
+                    <UL class="tab-contents-main">
+                        <li><span>Mero Job Limited - Nepal (2022 to Present)</span><br>
+                            <ul class="tab-contents-sub">  
+                                <li>Head - Business Intelligence and Growth<br></li><br>
+                            </ul>
+                        </li>       
+                        <li><span>Ernst and Young LLP - India (2017 to 2021)</span><br>
+                            <ul class="tab-contents-sub">
+                                <li>Assistant Manager - Risk Advisory<br></li><br>
+                            </ul>
+                        </li>       
+                        <li><span>RRCA and Associates - India (2014 to 2017)</span><br>
+                            <ul class="tab-contents-sub">  
+                                <li>Audit Associate<br></li><br>
+                            </ul>
+                        </li>      
+                    </UL>     
+                </div>
+
+
+                <div class="tab-contents" id="education">
+                    <UL class="tab-contents-main">
+                        <li><span>Chartered Accountant (CA)</span><br>
+                            <ul class="tab-contents-sub">  
+                                <li>Institute of Chartered Accountants of India (ICAI), September 2014<br></li><br>
+
+                            </ul>
+                        </li>       
+                        <li><span>Master of Commerce (M.Com F&T)</span><br>
+                            <ul class="tab-contents-sub">
+                                <li>Indira Gandhi National Open University (IGNOU), 2016<br></li><br>
+
+                            </ul>
+                        </li>       
+                        <li><span>Bachelor of Commerce (B.Com A&F)</span><br>
+                            <ul class="tab-contents-sub">  
+                                <li>Indira Gandhi National Open University (IGNOU), 2012<br></li><br>
+
+                            </ul>
+                        </li>                    
 
                     </UL>     
-
                 </div>
+
             </div>           
 
         </div>
     </div>
 </div>
+
+
+<!-- ------------------------------------Services------------------------------------- -->
+
+
+<script>
+
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script> 
 
 
 </body>
