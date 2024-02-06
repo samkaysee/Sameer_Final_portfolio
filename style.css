@@ -115,7 +115,7 @@ nav ul li a:hover::after{
 }
 
 .sub-title{ 
-    font-size: 60px;    /*about me*/
+    font-size: 50px;    /*about me*/
     font-weight: 600;
     color: #fff;
 }
