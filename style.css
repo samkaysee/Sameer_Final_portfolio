@@ -1,12 +1,29 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'poppins', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;  
+    font-family:'poppins', sans-serif;
 }
 
+/* :root{
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
+} */
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+
+
 html{
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body{
@@ -17,13 +34,15 @@ body{
 #header{
     width:100%;
     height:100vh;
-    background-image: url(images/background_final_big.jpg);
+    position: relative;
+    /* background-image: url(images/background_final_big.jpg);
     background-size:contain;
-    background-position: center;
+    background-position: center; */
 }
 
 .container{
     padding:15px 2%;
+    /* display: flex; */
 }
 
 nav{
@@ -84,6 +103,74 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #eabd23;
 }
+
+.home-download{
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+
+.home-download a{
+    background:#eabd23 ;
+    border: #ffffff solid 2px;
+    border-radius: 15px;
+    font-size:16px;
+    color: #fff;
+    padding: 12px 5px 12px 20px;
+    text-decoration: none;
+    display: inline-block;
+    width: 210px;
+    transition: transform 0.5s;
+}
+
+.home_btn_resume:hover{
+    background: #5bb974;
+    transform: translateY(-3px);
+}
+
+.img-box{
+    width: 45%;
+    height: 90%;
+    position: absolute;
+    bottom: 55%;
+    right: 2%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.img-box img{
+    height: 90%;
+    position: absolute;
+    left: 25%;
+    bottom: -35%;
+    transform: translateY(10%);
+    transition: bottom 1.2s ease, left 1.2s ease;
+    
+}
+
+
+/* .img-box:hover .back-img{
+    bottom: 50px;    
+} */
+
+.img-box:hover .main-img{
+    left: 10px;
+}
+
+/* .img-box:hover .main-img {
+    transform: translate(10px, -10px);
+}
+
+.img-box:hover .back-img {
+    transform: translate(10px, -10px);
+} */
+
+.img-box img.main-img {
+    height:auto;
+    left:36%;
+    bottom:-50%;
+}
+
 
 /* --------------------------------------About--------------------------------------- */
 
