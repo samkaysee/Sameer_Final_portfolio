@@ -10,15 +10,15 @@
 <body>
 <div id="header">
     <div class="container">
-        <nav>
+        <nav id="navbar">
             <img src="images/S_logo.png" class="logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Expertise</a></li>
+                <!-- <li><a href="#portfolio">Portfolio</a></li> -->
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="to_do/to_do.html">To-Do App</a></li> 
+                <li class ="todo-item"><a href="to_do/to_do.html">To-Do App</a></li> 
                 <i class="cross-burger fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
                 <i class="cross-burger fa-solid fa-bars" onclick="openmenu()"></i>
@@ -168,8 +168,14 @@
 
 <div id="services">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
+        <h1 class="sub-title">Area of Expertise</h1>
         <div class="services-list">
+            <div onclick="window.open('Sub-domain/03.Financial%20Advisory.html', '_blank');">
+                <i class="fa-sharp fa-solid fa-money-check-dollar"></i>
+                <h2>Financial Advisory</h2>
+                <p>Providing strategic advice and guidance to improve overall financial performance and decision-making.</p>
+                <a href="Sub-domain/03.Financial%20Advisory.html"> Learn more</a>
+            </div>
             <div onclick="window.open('Sub-domain/01.Bookkeeping.html', '_blank');">
                 <i class="fa-solid fa-book"></i>
                 <h2>Bookkeeping</h2>
@@ -182,92 +188,16 @@
                 <p>Analyzing, interpreting, and summarizing financial data to provide insights for decision-making.</p>
                 <a href="Sub-domain/02.Accounting.html"> Learn more</a>
             </div>
-            <div onclick="window.open('Sub-domain/03.Financial%20Advisory.html', '_blank');">
-                <i class="fa-sharp fa-solid fa-money-check-dollar"></i>
-                <h2>Financial Advisory</h2>
-                <p>Providing strategic advice and guidance to improve overall financial performance and decision-making.</p>
-                <a href="Sub-domain/03.Financial%20Advisory.html"> Learn more</a>
-            </div>
+            
         </div>
     </div>
 </div>
-
-
-<!-- <div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-book"></i>
-                <h2>Bookkeeping</h2>
-                <p>Description of ST1</p>
-                <a href="#bookkeeping-details"> Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-calculator"></i>
-                <h2>Accounting</h2>
-                <p>Description of ST2</p>
-                <a href="#accounting-details"> Learn more</a>
-            </div>
-            <div>
-                <i class="fa-sharp fa-solid fa-money-check-dollar"></i>
-                <h2>Financial Services</h2>
-                <p>Description of ST3</p>
-                <a href="#financial-details"> Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="bookkeeping-details">
-    <h2>Bookkeeping Details</h2>
-    <p>Detailed information about bookkeeping services...</p>
-</div>
-
-<div id="accounting-details">
-    <h2>Accounting Details</h2>
-    <p>Detailed information about accounting services...</p>
-</div>
-
-<div id="financial-details">
-    <h2>Financial Services Details</h2>
-    <p>Detailed information about financial services...</p>
-</div> -->
-
-
-
-<!-- <div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-book"></i>
-                <h2>Bookkeeping</h2>
-                <p>Description of ST1</p>
-                <a href="#"> Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-calculator"></i>
-                <h2>Accounting</h2>
-                <p>Description of ST2</p>
-                <a href="#"> Learn more</a>
-            </div>
-            <div>
-                <i class="fa-sharp fa-solid fa-money-check-dollar"></i>
-                <h2>Financial Services</h2>
-                <p>Description of ST3</p>
-                <a href="#"> Learn more</a>
-            </div>
-
-        </div>
-    </div>
-</div> -->
 
 
 
 
 <!--------------------------------------Portfolio--------------------------------------->
-<div id="portfolio">
+<!-- <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">Portfolio</h1>
         <div class="work-list">
@@ -299,7 +229,7 @@
         </div>
         <a href="#" class="btn">See more</a>
     </div>
-</div>
+</div> -->
 
  <!-- -----------------------------------------Contact ---------------------------------------------------  -->
 
@@ -308,7 +238,7 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> sameerghorsane@gmail.com</p>
+                <p><i class="fa-solid fa-paper-plane"></i> sameer.ghorsane@gmail.com</p>
                 <p><i class="fa-solid fa-phone-volume"></i> 9813853615</p>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/sameer-g-7290269a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
